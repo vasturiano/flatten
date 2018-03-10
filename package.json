@@ -1,0 +1,40 @@
+{
+  "name": "@vasturiano/flatten",
+  "version": "1.0.0",
+  "description": "Recursively flatten nested arrays with arbitrary levels",
+  "main": "dist/flatten.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasturiano/flatten.git"
+  },
+  "keywords": [
+    "flatten",
+    "array",
+    "nested",
+    "recursive"
+  ],
+  "author": {
+    "name": "Vasco Asturiano",
+    "url": "http://bl.ocks.org/vasturiano"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vasturiano/flatten/issues"
+  },
+  "homepage": "https://github.com/vasturiano/flatten",
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && rollup -c",
+    "watch": "rollup -c -w",
+    "minify": "uglifyjs dist/flatten.js -o dist/flatten.min.js -c -m --comments '/Version/'",
+    "prepublish": "npm run build && npm run minify"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "rollup": "^0.56.5",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-watch": "^4.3.1",
+    "uglify-js": "3.3.11"
+  }
+}
