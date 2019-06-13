@@ -55,5 +55,5 @@ flatten(nestedArray);
 [npm-url]: https://npmjs.org/package/@vasturiano/flatten
 [build-size-img]: https://img.shields.io/bundlephobia/minzip/@vasturiano/flatten.svg
 [build-size-url]: https://bundlephobia.com/result?p=@vasturiano/flatten
-[dependencies-img]: https://img.shields.io/david/vasturiano/@vasturiano/flatten.svg
-[dependencies-url]: https://david-dm.org/vasturiano/@vasturiano/flatten
+[dependencies-img]: https://img.shields.io/david/vasturiano/flatten.svg
+[dependencies-url]: https://david-dm.org/vasturiano/flatten
