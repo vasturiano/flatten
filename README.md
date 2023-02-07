@@ -14,11 +14,7 @@ A utility function to recursively flatten nested arrays with arbitrary levels
 ```js
 import flatten from '@vasturiano/flatten';
 ```
-or
-```js
-const flatten = require('@vasturiano/flatten');
-```
-or even
+or using a *script* tag
 ```html
 <script src="//unpkg.com/@vasturiano/flatten"></script>
 ```

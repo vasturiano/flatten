@@ -1,7 +1,9 @@
 import babel from '@rollup/plugin-babel';
-import { terser } from "rollup-plugin-terser";
+import terser from '@rollup/plugin-terser';
 import dts from 'rollup-plugin-dts';
-import { name, homepage, version, dependencies, peerDependencies } from './package.json';
+
+import pkg from './package.json' assert { type: 'json' };
+const { name, homepage, version, dependencies, peerDependencies } = pkg;
 
 const umdConf = {
   format: 'umd',
@@ -32,17 +34,12 @@ export default [
       babel({ exclude: 'node_modules/**' })
     ]
   },
-  { // commonJs and ES modules
+  { // ES module
     input: 'src/index.js',
     output: [
       {
-        format: 'cjs',
-        file: `dist/${fileName}.common.js`,
-        exports: 'auto'
-      },
-      {
         format: 'es',
-        file: `dist/${fileName}.module.js`
+        file: `dist/${fileName}.mjs`
       }
     ],
     external: [...Object.keys(dependencies || {}), ...Object.keys(peerDependencies || {})],
