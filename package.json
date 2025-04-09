@@ -1,6 +1,6 @@
 {
   "name": "@vasturiano/flatten",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Recursively flatten nested arrays with arbitrary levels",
   "type": "module",
   "jsdelivr": "dist/flatten.min.js",
