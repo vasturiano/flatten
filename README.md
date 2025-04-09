@@ -16,7 +16,7 @@ import flatten from '@vasturiano/flatten';
 ```
 or using a *script* tag
 ```html
-<script src="//unpkg.com/@vasturiano/flatten"></script>
+<script src="//cdn.jsdelivr.net/npm/@vasturiano/flatten"></script>
 ```
 
 ## Usage example

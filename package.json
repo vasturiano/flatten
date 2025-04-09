@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "Recursively flatten nested arrays with arbitrary levels",
   "type": "module",
+  "jsdelivr": "dist/flatten.min.js",
   "unpkg": "dist/flatten.min.js",
   "main": "dist/flatten.mjs",
   "module": "dist/flatten.mjs",
